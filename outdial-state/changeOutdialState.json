@@ -20,7 +20,7 @@
             "comp": "outdial-state",
             "script":"http://localhost:3001/build/outdial-state.js",
             "properties": {
-              "outdialIdleCode": "242bf8f6-700b-4466-868e-352ad1dc8670"
+              "outdialIdleCode": "xxxxxxxx-yyyy-zzzz-aaaa-bbbbbbbbb"
             }
           }
         },
@@ -753,7 +753,7 @@
             "comp": "outdial-state",
             "script":"http://localhost:3001/build/outdial-state.js",
             "properties": {
-              "outdialIdleCode": "242bf8f6-700b-4466-868e-352ad1dc8670"
+              "outdialIdleCode": "xxxxxxxx-yyyy-zzzz-aaaa-bbbbbbbbb"
             }
           }
         },
