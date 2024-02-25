@@ -9,9 +9,12 @@ Note: Disable the 'Agent available after outdial' from associated Desktop Profil
 
 ## Vidcast [Demo - Auto state change during Outdials](https://app.vidcast.io/share/29af0e97-e590-4470-8e92-373d0366eaa3)
 
+### State before outdial
 ![State before dialling out](./snapshots/BeforeOutdial.png)
 
+### State automatically changed on an outdial
 ![State when outdial is triggered](./snapshots/AfterOutdial.png)
+
 
 ## Try this headless widget from local env
 
@@ -38,6 +41,31 @@ _Add the widget to desktop from the shared layout:_
 - Sign in to Agent Desktop with the team assigned the above layout. 
 - Place an outdial call to see the state change automatically. 
 
+_Manually update the agent team layout_
+
+- Create a new Idle code from Control Hub and copy the Idle code ID. Ensure that the Idle code is assigned on the agents' Desktop Profile
+- Update the `outdialIdleCode` in the below code
+- Copy the below code to the `area` section of desktop layout under `agent` and / or `supervisorAgent` profiles. Refer the shared layout.
+
+```
+"headless": {
+    "id": "dw-headless",
+    "widgets": {
+        "comp1": {
+            "comp": "outdial-state",
+            "script":"http://localhost:3001/build/outdial-state.js",
+            "properties": {
+                "outdialIdleCode": "xxxxxxxx-yyyy-zzzz-aaaa-bbbbbbbbbb"
+            }
+        }
+    },
+    "layout": {
+        "areas": [["comp1"]],
+        "size": { "cols": [1], "rows": [1] }
+    }
+},
+```
+
 
 ## Improve the widget:
 
@@ -51,10 +79,10 @@ _Add the widget to desktop from the shared layout:_
 
 ['Edit a Desktop Layout' section in the Administration Guide](https://help.webex.com/en-us/article/n5595zd/Webex-Contact-Center-Setup-and-Administration-Guide)
 
-
 [Desktop Widgets Live Demo](https://ciscodevnet.github.io/webex-contact-center-widget-starter/)
 
 ## Disclaimer
 
 > This is just a sample POC widget to demo the headless widget and not meant to be production ready.
 > This demo showcases the possibilities of Desktop SDK and helps to identify & implement use cases. 
+.
