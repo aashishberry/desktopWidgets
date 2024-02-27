@@ -7,12 +7,6 @@ class outdialState extends HTMLElement {
 	constructor() {
 		super();
 		this.attachShadow({ mode: "open" });
-		const template = document.createElement("template");
-		template.innerHTML = `
-		<style>
-		</style>
-		`;
-		this.shadowRoot.appendChild(template.content.cloneNode(true));
 	}
 	
 	connectedCallback() {
