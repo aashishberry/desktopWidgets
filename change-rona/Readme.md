@@ -57,7 +57,7 @@ _Manually update the agent team layout_
 
 - You can modify the widget as required.
 - You may add additional logic to identify if the agent manually changes to Idle before the automatic change to Available.
-- To create a new compiled JS file, execute the command `npm run build` which will create the new compiled widget under `.src/build/outdial-state.js`.
+- To create a new compiled JS file, execute the command `npm run build` which will create the new compiled widget under `.src/build/change-rona.js`.
 - You may rename this file, host it on your server of choice, and use host link under `script` in the layout.
 
 ## Useful Links - Supplemental Resources
