@@ -22,7 +22,7 @@ _To use this widget sample, we can run it from localhost_
 
 _Add the widget to desktop from the shared layout:_
 
-- Download the **changeStateToAvailable.json_** file.
+- Download the **changeStateToAvailable.json** file.
 - Update the `delaySeconds` to a required value (in seconds)
 - Save the layout and upload & assign to the team layout via Control Hub or Admin Portal
 - Note: Layouts are configured per Agent Team.

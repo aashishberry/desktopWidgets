@@ -750,10 +750,10 @@
         "id": "dw-headless",
         "widgets": {
           "comp1": {
-            "comp": "outdial-state",
-            "script":"http://localhost:3001/build/outdial-state.js",
+            "comp": "change-rona",
+            "script":"http://localhost:3001/build/change-rona.js",
             "properties": {
-              "outdialIdleCode": "xxxxxxxx-yyyy-zzzz-aaaa-bbbbbbbbb"
+              "delaySeconds": "15"
             }
           }
         },
