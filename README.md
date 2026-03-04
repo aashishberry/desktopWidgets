@@ -8,5 +8,5 @@
 ## Visual
 1. **Desktop Ring V2** - Configurable notification sounds for voice/digital interactions
 2. **Desktop Agent Announcement** - Text-to-Speech announcements for incoming interactions
-3. **Desktop Update Variable** - Update CAD variables during active interactions
+3. **Desktop Update Variable** - Allow multi wrap up / list type CAD variables during active interactions
 4. **Desktop Visual Queue** - Display badges based on CAD values
